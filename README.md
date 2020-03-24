@@ -1,5 +1,6 @@
 # Lemin
 Ant algorithm project
+Must be able to handle up to 10000 nodes
 
 ## How To Run
 ```
@@ -35,7 +36,8 @@ the_links
 ```
 - The ant farm is defined by the following links:
 ```
-##start 1 23 3
+##start
+1 23 3
 2 16 7
 #comment
 3 16 3
