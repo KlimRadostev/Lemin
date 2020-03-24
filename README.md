@@ -60,7 +60,7 @@ the_links
 6-5
 #another comment
 ```
-• Which corresponds to the following representation:
+- Which corresponds to the following representation:
 ```
            _______________
           /               \ 
