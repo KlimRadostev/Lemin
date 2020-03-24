@@ -22,4 +22,5 @@ you can find maps in the map folder
 number_of_ants
 the_rooms
 the_links
+
 Lx-y Lz-w Lr-o ...
