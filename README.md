@@ -1,6 +1,5 @@
 # Lemin
 Ant algorithm project
-Must be able to handle up to 10000 nodes
 
 ## How To Run
 ```
@@ -73,3 +72,8 @@ the_links
   \ /          [2]/_______/
   [7]__________/
 ```
+
+## My Solution
+- Since rooms are defined by (name, coordinates(x, y)) coordinates only need to be used for a visualizer which I didn't use so I ignored it.
+- I stored the names inside a queue since the amount of rooms is indefinite.
+- I also 
