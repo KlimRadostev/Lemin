@@ -18,4 +18,8 @@ you can find maps in the map folder
 - At each turn you will only display the ants that moved.
 - At each turn you can move each ant only once and through a tube (the room at the receiving end must be empty).
 - You must to display your results on the standard output in the following format:
-
+```
+number_of_ants
+the_rooms
+the_links
+Lx-y Lz-w Lr-o ...
