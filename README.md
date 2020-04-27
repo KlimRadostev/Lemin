@@ -74,6 +74,9 @@ the_links
 ```
 
 ## My Solution
-- Since rooms are defined by (name, x, y) coordinates only need to be used for a visualizer which I didn't use so I ignored it.
-- I stored the names inside a queue since the amount of rooms is indefinite.
-- I also 
+- Since rooms are defined by (name, x, y) coordinates only need to be used for a visualizer which I didn't use so I ignored them.
+- I stored the names inside a queue (you can find my own personal queue in libft) since the amount of rooms is indefinite.
+- That allows me to store an indefinite numbers of room.
+- Since the names of the rooms are random and are used to see which points are linked I used a dictionary (dict in libft) to access them in O(1) time and not use strcmp which would be O(n) very slow in case there was 10,000 nodes.
+- I used adjacency lists for graph representation.
+- 
