@@ -74,6 +74,6 @@ the_links
 ```
 
 ## My Solution
-- Since rooms are defined by (name, coordinates(x, y)) coordinates only need to be used for a visualizer which I didn't use so I ignored it.
+- Since rooms are defined by (name, x, y) coordinates only need to be used for a visualizer which I didn't use so I ignored it.
 - I stored the names inside a queue since the amount of rooms is indefinite.
 - I also 
