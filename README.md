@@ -74,9 +74,16 @@ the_links
 ```
 
 ## My Solution
+### Parsing
 - Since rooms are defined by (name, x, y) coordinates only need to be used for a visualizer which I didn't use so I ignored them.
 - I stored the names inside a queue (you can find my own personal queue in libft) since the amount of rooms is indefinite.
 - That allows me to store an indefinite numbers of room.
-- Since the names of the rooms are random and are used to see which points are linked I used a dictionary (dict in libft) to access them in O(1) time and not use strcmp which would be O(n) very slow in case there was 10,000 nodes.
-- I used adjacency lists for graph representation.
-- 
+- Since the names of the rooms are random and are used to see which points are linked I used a **dictionary** (dict in libft) to access them in O(1) time and not use strcmp which would be O(n) very slow in case there was 10,000 nodes.
+- I used **adjacency lists** for graph representation.
+### Solving
+- Me and my teammate thought about many different ways to solve this problem, our initial attempt was just a shortest path algorithm which would work for finding only one path and delete the already found path and run the algorithm again for n paths found.
+- However we found out about max flow algorithms and ended up implementing **Edmund Karps** max flow algorithm.
+- We stored all the paths inside a queue.
+### Displaying
+- Reminder: Display format is L(ant_number)-(goes to room_name)
+- I 
