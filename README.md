@@ -93,3 +93,4 @@ the_links
 - Each node of the had a boolean that represents if the current node has an ant, an int that represented the room number of the path and the next and previous nodes.
 - We also had to figure out a small algorithm to know how many ants to send in each path.
 - Finally, I printed everything out by going right to left on the deck, and once I reached the start node I would send an and if it was necessary according to the amount of ants left and our small algorithm.
+
