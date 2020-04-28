@@ -89,7 +89,10 @@ the_links
 * Taking the example above as consideration my deck would be:
   * 1-2-4-0
   * 1-3-5-6-0  
-* Each node of the had a boolean that represents if the current node has an ant, an int that represented the room number of the path and the next and previous nodes.
+* Each node of the deack has:
+  * A boolean that represents if the current node has an ant, 
+  * An int that represented the room number of the path,
+  * The next and previous nodes.
 * We also had to figure out a small algorithm to know how many ants to send in each path.
 * Finally, I printed everything out by going right to left on the deck, and once I reached the start node I would send an and if it was necessary according to the amount of ants left and our small algorithm.
 
