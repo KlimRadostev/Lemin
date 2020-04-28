@@ -97,5 +97,5 @@ the_links
 * Finally, I printed everything out by going right to left on the deck, and once I reached the start node I would send an ant if it was necessary according to the amount of ants left and our small algorithm.
 
 ## The Team
-kradoste
+kradoste  
 julee
