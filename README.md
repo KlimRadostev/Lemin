@@ -1,5 +1,5 @@
 # Lemin
-Ant algorithm project
+Ant Farm Algorithm Project
 
 ## How To Run
 ```
