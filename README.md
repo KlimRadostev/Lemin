@@ -34,18 +34,19 @@ the_links
 ```
 * The ant farm is defined by the following links:
 ```
+10                    => first digit will determin ant amount
 ##start
-1 23 3
-2 16 7
-#comment
+1 23 3                => this will be the starting node ants come out from
+2 16 7                => room define: name coor_x coor_y (coor used for visuals)
+#comment              => comments can be written anywhere      
 3 16 3
 4 16 5
 5 9 3
 6 1 5
 7 4 8
 ##end
-0 9 5
-0-4
+0 9 5                 => ants final destination
+0-4                   => links define: name1-name2
 0-6
 1-3
 4-3
