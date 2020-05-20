@@ -62,6 +62,7 @@ the_links
 ```
 - Which corresponds to the following representation:
 ```
+SNAIL GRAPH
            _______________
           /               \ 
   ______[5]----[3]----[1] |
@@ -143,7 +144,7 @@ and we keep doing this until we have no more paths to find
 [S]--[0]--[3]--[E]
   \       /
    [4]--[5]
-NOTE: in a shortest path algorith I will find the following this path first S-0-3-E without considering that there
+NOTE: in a shortest path algorith I will find the following path first S-0-3-E without considering that there
 are 2 possible paths in this example, if I were to send 100 ants it will take my ants 104 turns to flow throught
 the graph, however if I were to use both paths its going to take my ants a bit over 50 turns to reach the end.
 ```
@@ -151,8 +152,8 @@ the graph, however if I were to use both paths its going to take my ants a bit o
 * Each path was stored inside a queue.
 ### Displaying
 * Reminder: Display format is L(ant_number)-(goes to room_name)
-* This was the hardest part of the problem but my solution involved using a list of **decks**, I changed from queue to deck because working on a queue didnt allow me to have the flexibility I needed to print this info.
-* Taking the example above as consideration my list of decks would be:
+* This was the hardest part of the problem but my solution involved using a list of [**decks**](Lemin/deck.h), I changed from queue to deck because working on a queue didnt allow me to have the flexibility I needed to print this info.
+* Taking the Snail Graph example above as consideration my list of decks would be:
   * 1-2-4-0
   * 1-3-5-6-0  
 * Each node of the deck has:
