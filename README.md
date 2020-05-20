@@ -148,7 +148,7 @@ NOTE: in a shortest path algorith I will find the following path first S-0-3-E w
 are 2 possible paths in this example, if I were to send 100 ants it will take my ants 104 turns to flow throught
 the graph, however if I were to use both paths its going to take my ants a bit over 50 turns to reach the end.
 ```
-* So me and my teamate found out about max flow algorithms which solves this exact problem and ended up implementing [**Edmund Karps**](./algorithms.c) max flow algorithm.
+* So my teamate and I found out about max flow algorithms which solves this exact problem and ended up implementing [**Edmund Karps**](./algorithms.c) max flow algorithm.
   * References used:
     * https://en.wikipedia.org/wiki/Edmonds–Karp_algorithm
     * https://www.youtube.com/watch?v=RppuJYwlcI8
@@ -168,5 +168,6 @@ the graph, however if I were to use both paths its going to take my ants a bit o
 * Finally, I printed everything out by going right to left on the deck, and once I reached the start node I would send an ant if it was necessary according to the amount of ants left and our small algorithm.
 
 ## The Team
-kradoste  
-julee
+julee  
+kradoste
+
