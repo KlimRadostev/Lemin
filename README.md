@@ -73,7 +73,7 @@ the_links
 ```
 
 ## Result Display
-* For your final output follow thi sformat:
+* For your final output follow this format:
 ```
 number_of_ants          => Simply display the farm format
 the_rooms
@@ -123,8 +123,30 @@ turn: 5
 * I used **adjacency lists** for graph representation.
 ### Solving
 * My teammate and I thought about many different ways to solve this problem, our initial attempt was just a shortest path algorithm which would work for finding only one path and delete the already found path and run the algorithm again for n paths found.
-* However we found out about max flow algorithms and ended up implementing **Edmund Karps** max flow algorithm.
-* We stored all the paths inside a queue.
+```
+    / A - ... \
+S - - B - ... - - E
+    \ C - ... /
+    
+lets say we find path A to be the shortest then we store it and then delete it from our adjacency list.
+
+    / XXXXXXX \
+S - - B - ... - - End
+    \ C - ... /
+    
+and we keep doing this until we have no more paths to find
+```
+* However this is technically wrong since we are trying to push ants as fast as possible which wouldn't work in the following example:
+```
+        [1]--[2]
+      /         \
+[S]--[0]--[3]--[E]
+  \       /
+   [4]--[5]
+NOTE: in a shortest path algorith I will find the following this path first S-0-3-E without considering that there are 2 possible paths in this example, if I were to send 100 ants it will take my ants 104 turns to flow throught the graph, however if I were to use both paths its going to take my ants a bit over 50 turns to reach the end.
+```
+* So me and my teamate found out about max flow algorithms which solves this exact problem and ended up implementing **Edmund Karps** max flow algorithm.
+* Each path was stored inside a queue.
 ### Displaying
 * Reminder: Display format is L(ant_number)-(goes to room_name)
 * This was the hardest part of the problem but my solution involved using a list of **decks**, I changed from queue to deck because working on a queue didnt allow me to have the flexibility I needed to print this info.
