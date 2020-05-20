@@ -143,7 +143,9 @@ and we keep doing this until we have no more paths to find
 [S]--[0]--[3]--[E]
   \       /
    [4]--[5]
-NOTE: in a shortest path algorith I will find the following this path first S-0-3-E without considering that there are 2 possible paths in this example, if I were to send 100 ants it will take my ants 104 turns to flow throught the graph, however if I were to use both paths its going to take my ants a bit over 50 turns to reach the end.
+NOTE: in a shortest path algorith I will find the following this path first S-0-3-E without considering that there
+are 2 possible paths in this example, if I were to send 100 ants it will take my ants 104 turns to flow throught
+the graph, however if I were to use both paths its going to take my ants a bit over 50 turns to reach the end.
 ```
 * So me and my teamate found out about max flow algorithms which solves this exact problem and ended up implementing **Edmund Karps** max flow algorithm.
 * Each path was stored inside a queue.
